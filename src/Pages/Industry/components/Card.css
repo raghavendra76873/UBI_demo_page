@@ -1,0 +1,6 @@
+#benkicard1:hover {
+    cursor: pointer;
+    transition: background 1s;
+    background: linear-gradient(to bottom, #1F2167, #378AD4);
+    color: white; /* Replace these colors with your desired gradient */
+  }

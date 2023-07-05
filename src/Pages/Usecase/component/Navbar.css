@@ -1,0 +1,40 @@
+.banner-image {
+    background-image: url('./images/Frame9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    #img123{
+      width: 150px;
+      height: 70px;
+    }
+    .banner-image {
+      /* margin-top: 100px; */
+      background-position: center;
+      background-image: url('./images/Frame@768.png');
+      background-size: cover;
+      /* height: 150px; */
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #img123{
+      width: 130px;
+      height: 60px;
+    }
+    .banner-image {
+      /* margin-top: 100px; */
+      background-position: center;
+      background-image: url('./images/Frame@576.png');
+      background-size: cover;
+      /* height: 150px; */
+      width: 100%;
+    }
+  }
