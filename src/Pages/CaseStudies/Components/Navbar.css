@@ -1,0 +1,55 @@
+/* .banner-image {
+    background-image: url('./Images/navbar_case1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+  } */
+  .dropdown-toggle::after{
+    display: none;
+  }
+  .navbar-scrolled {
+    background-color: #1D165C;
+    height: 110px;
+    /* Add any other custom styles you want for the scrolled Navbar */
+  }
+  @media (max-width: 576px) {
+     img {
+      width: 100%;
+    }
+  }
+  
+  /* For medium devices (up to 768px) */
+  @media (max-width: 768px) {
+     img {
+      width: 90%;
+    }
+  }
+  
+  /* For large devices (up to 992px) */
+  @media (max-width: 992px) {
+     img {
+      width: 80%;
+    }
+  }
+  
+  /* For extra-large devices (up to 1200px) */
+  @media (max-width: 1200px) {
+     img {
+      width: 70%;
+    }
+  }
+   #img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* @media (max-width: 1400px) {
+    .banner-image {
+        background-image: url('./Images/navbar_case1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+      }
+    } */

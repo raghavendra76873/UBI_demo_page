@@ -1,9 +1,11 @@
 import React from 'react'
 import img from './images/img1.png'
 import './Card.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom'
 const Card = (props) => {
   return (
     <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center my-4">
+      <Link to={props.link} style={{ textDecoration: 'none' }}>
   <div className="card card-gradient-hover rounded-3"  id="benkicard" style={{ width: '25rem', boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.3)' }}>
     <img src={process.env.PUBLIC_URL + props.icon} className="card-img-top" alt="..." />
     <div className="card-body text-center card-gradient-hover" style={{borderRadius:'0px 0px 5px 5px'}}>
@@ -13,6 +15,8 @@ const Card = (props) => {
       <div className="rectangle" style={{ height: '6px', backgroundColor: '#1D165C', position: 'absolute', bottom: '0', left: '0', width: '100%', borderRadius: '0px 0px 5px 5px' }}></div>
     </div>
   </div>
+
+      </Link>
 </div>
 
 

@@ -1,7 +1,10 @@
 .card-gradient-hover {
 }
-
+#benkicard{
+  text-decoration: none;
+}
 #benkicard:hover {
+  text-decoration: none;
     cursor: pointer;
     transition: background 1s;
     background: linear-gradient(to bottom, #1F2167, #378AD4);

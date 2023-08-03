@@ -1,6 +1,7 @@
 import React from 'react'
 import { data } from './data'
 import Card from './components/Card'
+import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const Industry = () => {
   return (

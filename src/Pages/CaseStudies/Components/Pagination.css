@@ -1,0 +1,26 @@
+.pagination li.page-item {
+    /* Remove default outline/border for the pagination buttons */
+    outline: none;
+    border: none;
+  }
+  .pagination li.page-item.active a.page-link {
+    /* Add custom styles for the active pagination button if needed */
+    /* For example, you can add a background color or text color for the active button */
+    background-color: #3993DD;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* border-radius: 0.1px solid black; */
+  }
+  
+  .pagination li.page-item a.page-link {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* border: 0.1px solid black; */
+    /* Customize the appearance of the pagination links */
+    /* Add any styles you want for the pagination links */
+}
+a{
+    cursor: pointer;
+  }

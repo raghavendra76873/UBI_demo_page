@@ -1,0 +1,28 @@
+.card-gradient-hover {
+}
+#benkicard{
+  text-decoration: none;
+}
+#benkicard:hover {
+  text-decoration: none;
+    cursor: pointer;
+    transition: background 1s;
+  }
+  .rectangle {
+    height: 0;
+    transition: height 0.2s; /* Add a transition effect for smooth animation */
+  }
+  
+  /* Apply the rectangle style when the card is hovered */
+  .card-gradient-hover:hover .rectangle {
+    height: 7px;
+    /* background-color: linear-gradient(to bottom, #1F2167, #378AD4); */
+  }
+  .card-title1 {
+    color: #1D165C;
+  }
+  
+  /* Change the color of the card title when the card is hovered */
+  .card-gradient-hover:hover .card-title1 {
+    color: #3993DD; /* Replace 'YourHoverColor' with the color you want on hover */
+  }
