@@ -6,7 +6,7 @@
     width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px){
     #img123{
       width: 150px;
       height: 70px;

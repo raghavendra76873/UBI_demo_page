@@ -3,7 +3,7 @@ import './Card1.css'
 import vector from './Images/Vector 5.png';
 const Card = (props) => {
   console.log(props.icon)
-  const isPharmLaunch = props.name === "PharmLaunch";
+  const isPharmLaunch = props.name === "UBI Pharma Launch" || props.name === "IntelliSearch AI";
   return ( 
     <>
      <div className="col-12 col-md-12 col-lg-6 col-xl-4 d-flex justify-content-center g-5">

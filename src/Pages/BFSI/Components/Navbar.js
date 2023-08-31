@@ -28,7 +28,7 @@ const Navbar = () => {
   
     const navbarClassName = scroll ? 'navbar navbar-expand-lg navbar-white p-md-1 fixed-top bg-white' : 'navbar navbar-expand-lg navbar-white p-md-3 fixed-top';
     const myStyle={
-      backgroundImage:`url(${process.env.PUBLIC_URL+ "/bfsi_nav.png"})`,
+      backgroundImage:`url(${process.env.PUBLIC_URL+ "/bfsi_navbar.png"})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         height: '380px',

@@ -12,15 +12,6 @@ function App() {
   const [postsPerPage, setPostsPerPage] = useState(6);
   const [searchText, setSearchText] = useState('');
   const [selectedFilter, setSelectedFilter] = useState("All");
-  const ScrollToTop = () => {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-
-    return null;
-  };
   const handleInputChange = (event) => {
     setSearchText(event.target.value);
   };
@@ -39,7 +30,6 @@ function App() {
 
   return (
     <div>
-      <ScrollToTop />
       <Navbar />
       <div className="container mt-5">
       <div className="row justify-content-center align-items-center">
@@ -61,7 +51,7 @@ function App() {
               boxShadow:'0px 2px 5px rgba(0, 0, 0, 0.2)'
             }}
           >
-            All <MdKeyboardArrowDown size={20} />
+            {selectedFilter} <MdKeyboardArrowDown size={20} />
           </Dropdown.Toggle>
 
           <Dropdown.Menu>

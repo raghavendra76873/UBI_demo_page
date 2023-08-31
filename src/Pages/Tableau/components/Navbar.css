@@ -1,0 +1,13 @@
+.dropdown-toggle::after{
+    display: none;
+  }
+  #span1{
+    border: 1px solid rgb(188, 185, 185);
+  padding: 2px 15px;
+  border-radius: 9px;
+  background-color: #F9F9F9;
+  font-weight: 500;
+  }
+  #span1:hover{
+    cursor: pointer;
+  }

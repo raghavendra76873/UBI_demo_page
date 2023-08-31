@@ -14,12 +14,26 @@ import CaseStudies from './Pages/CaseStudies/CaseStudies'
 import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 import Industry from './Pages/Industry/Industry';
 import BFSI from './Pages/BFSI/BFSI'
+import Tableau from './Pages/Tableau/Tableau'
+import Reporting1 from './Pages/BFSI/Reporting'
+import Reporting2 from './Pages/Retail/Reporting'
+import Reporting3 from './Pages/Automotive/Reporting'
+import Reporting4 from './Pages/businessintelligence/Reporting'
+import PowerBI from './Pages/PowerBI/PowerBI'
 
 
 function App() {
+  
   const ScrollToTop = () => {
     const location = useLocation();
-
+    useEffect(() => {
+      // Determine the active button based on the current route
+      if (location.pathname === "/industry") {
+        setActiveButton("usecase");
+      } else if (location.pathname === "/usecase") {
+        setActiveButton("industry");
+      }
+    }, [location.pathname]);
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [location]);
@@ -60,6 +74,24 @@ function App() {
           </Route>
           <Route exact path="/casestudies">
             <CaseStudies/>
+          </Route>
+          <Route exact path="/tableau">
+            <Tableau/>
+          </Route>
+          <Route exact path="/reporting1">
+            <Reporting1/>
+          </Route>
+          <Route exact path="/reporting2">
+            <Reporting2/>
+          </Route>
+          <Route exact path="/reporting3">
+            <Reporting3/>
+          </Route>
+          <Route exact path="/reporting4">
+            <Reporting4/>
+          </Route>
+          <Route exact path="/powerbi">
+            <PowerBI/>
           </Route>
           <Route>
         <Navbar/>

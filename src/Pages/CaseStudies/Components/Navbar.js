@@ -34,7 +34,7 @@ const Navbar = () => {
       <>
         <nav className={navbarClassName} style={{ marginBottom: '-100px' }}>
           <div className="container my-3 mx-8">
-            <Link to="/">
+            <Link to="/industry">
             <img src={logo} width="220" height="100" id='img123' style={{marginLeft:'20%'}}/>
             </Link>
             <button
